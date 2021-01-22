@@ -10,7 +10,7 @@ mvn clean install
 mvn spring-boot:run -Dspring.cloud.stream.kafka.binder.brokers=<KAFKA_BROKER_URL> -Dspring.cloud.stream.bindings.input.destination=<TOPIC_NAME>
 ```
 
-## Steps to reproduce:
+## Steps to reproduce [kafka-binder-issue](https://github.com/spring-cloud/spring-cloud-stream-binder-kafka/issues/1016):
 
 1. Once the application starts, send some messages on the kafka topic you provided. 
 2. Stop the application & run it again by providing consumer group id, consumer startOffset (value latest) & resetOffset.
