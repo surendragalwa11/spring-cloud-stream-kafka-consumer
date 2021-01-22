@@ -33,4 +33,4 @@ docker build . -t consumer
  
  3. Send some messages on the kafka topic you provided.
  4. Stop the application & run it again by uncommenting last 3 lines of the docker-compose file's environment section. (group, startOffset & resetOffset).
- 5. Not that it listens to the previously consumed messages.
+ 5. Please note that it listens to the previously consumed messages.
